@@ -9,6 +9,12 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+app.use(function (req, res, next) {
+  res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+  res.header('Expires', '-1');
+  res.header('Pragma', 'no-cache');
+  next()
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
