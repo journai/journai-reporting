@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nohup nodemon -I -L ./bin/www"
+    "start": "nodemon -L ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
