@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "pm2 start ./bin/www --name='reporting' --watch -o ./logs/reporting-out.log -e ./logs/reporting-err.log"
+    "start": "pm2-runtime ./bin/www --name='reporting' --watch -o ./logs/reporting-out.log -e ./logs/reporting-err.log"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
