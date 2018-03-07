@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -L ./bin/www"
+    "start": "sh startscript.sh"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
